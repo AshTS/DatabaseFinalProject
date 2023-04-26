@@ -1,21 +1,19 @@
 use yew::prelude::*;
 
 #[function_component]
-fn App() -> Html {
-    let counter = use_state(|| 0);
-    let onclick = {
-        let counter = counter.clone();
-        move |_| {
-            let value = *counter + 1;
-            counter.set(value);
-        }
-    };
+fn Render() -> Html {
+    let spells = spells::get_sample_spells();
+    spells.iter().map(|spell| html! {
+        <><h2>{ &spell.name }</h2><p> {format!("Range: {}, Duration: {}, Level: {}", spell.range, spell.duration, spell.level)} </p></>
+    }).collect()
+}
 
+#[function_component]
+fn App() -> Html {
     html! {
         <div>
             <h1>{ "Database Final Project" }</h1>
-            <button {onclick}>{ "+1" }</button>
-            <p>{ *counter }</p>
+            <Render />
         </div>
     }
 }

@@ -1,56 +1,9 @@
 #[macro_use] 
 extern crate rocket;
-use std::{path::{PathBuf}, sync::atomic::Ordering};
 
 use mongodb::bson::oid::ObjectId;
 use rocket_db_pools::{Database, Connection};
-use rocket_db_pools::mongodb::*;
-
-use rocket::{serde::json::Json, http::{Header}, Response, fairing::{Fairing, Info, Kind}, Request, State, futures::StreamExt};
-use serde::{Serialize, Deserialize};
-
-use std::sync::atomic::AtomicUsize;
-
-/// Define a type that models our data.
-#[derive(Clone, Debug, Deserialize, Serialize)]
-struct Spell {
-    #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
-    id: Option<ObjectId>,
-    range: usize, // Feet
-    duration: usize, // In Seconds
-    requirements: ObjectId,
-    level: u8
-}
-
-
-/// Define a type that models our data.
-#[derive(Clone, Debug, Deserialize, Serialize)]
-struct SpellRequirement {
-    #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
-    id: Option<ObjectId>,
-    verbal: bool,
-    somatic: bool,
-    material: bool
-}
-
-#[derive(Clone, Debug, Deserialize, Serialize)]
-enum Class {
-    Bard,
-    BlackGuard,
-    Cleric,
-    Druid,
-    Paladin,
-    Ranger,
-    Wizard
-}
-
-/// Define a type that models our data.
-#[derive(Clone, Debug, Deserialize, Serialize)]
-struct SpellClass {
-    #[serde(rename = "_id", skip_serializing_if = "Option::is_none")]
-    id: Option<ObjectId>,
-    class: Class,
-}
+use rocket::{serde::{json::Json}, http::{Header}, Response, fairing::{Fairing, Info, Kind}, Request, futures::StreamExt};
 
 #[get("/")]
 fn index() -> &'static str {
@@ -60,7 +13,7 @@ fn index() -> &'static str {
 
 #[get("/all")]
 async fn read(mut db: Connection<DataStuff>) -> String {
-    let mut items = db.database("local").collection::<SpellRequirement>("testdb").find(None, None).await.unwrap();
+    let mut items = db.database("local").collection::<spells::SpellRequirement>("testdb").find(None, None).await.unwrap();
 
     let mut data = String::new();
 
@@ -70,8 +23,6 @@ async fn read(mut db: Connection<DataStuff>) -> String {
 
     data
 }
-
-
 pub struct Cors;
 
 #[rocket::async_trait]
@@ -98,7 +49,17 @@ impl Fairing for Cors {
 #[database("database")]
 struct DataStuff(rocket_db_pools::mongodb::Client);
 
+#[get("/spell")]
+fn produce_spell_data() -> Json<spells::Spell> {
+    spells::Spell {
+        name: "Spell".into(),
+        range: 5,
+        duration: 3600,
+        level: 4
+    }.into()
+}
+
 #[launch]
 async fn rocket() -> _ {
-    rocket::build().manage(HitCount { count: AtomicUsize::new(0) }).attach(DataStuff::init()).attach(Cors).mount("/", routes![index, count, read])
+    rocket::build().attach(DataStuff::init()).attach(Cors).mount("/", routes![index, read, produce_spell_data])
 }
