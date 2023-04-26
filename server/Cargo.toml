@@ -6,6 +6,12 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+mongodb = "2.4.0"
+tokio = "1.27.0"
 rocket = {version="0.5.0-rc.2", features=["json"]}
 serde = "1.0.152"
 serde_json = "1.0.93"
+
+[dependencies.rocket_db_pools]
+version = "=0.1.0-rc.3"
+features = ["mongodb"]

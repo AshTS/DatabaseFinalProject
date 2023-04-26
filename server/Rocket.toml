@@ -1,0 +1,2 @@
+[default.databases.database]
+url = "mongodb://localhost:27017/?readPreference=primary&ssl=false&directConnection=true"
