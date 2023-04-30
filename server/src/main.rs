@@ -3,7 +3,8 @@ extern crate rocket;
 
 use mongodb::bson::oid::ObjectId;
 use rocket_db_pools::{Database, Connection};
-use rocket::{serde::{json::Json}, http::{Header}, Response, fairing::{Fairing, Info, Kind}, Request, futures::StreamExt};
+use rocket::{serde::{json::Json}, http::{Header}, Response, fairing::{Fairing, Info, Kind}, Request, futures::StreamExt, Data};
+use spells::Spell;
 
 #[get("/")]
 fn index() -> &'static str {
@@ -12,17 +13,28 @@ fn index() -> &'static str {
 
 
 #[get("/all")]
-async fn read(mut db: Connection<DataStuff>) -> String {
-    let mut items = db.database("local").collection::<spells::SpellRequirement>("testdb").find(None, None).await.unwrap();
+async fn read(mut db: Connection<DataStuff>) -> Json<Vec<Spell>> {
+    let mut items = db.database("local").collection::<spells::Spell>("testdb").find(None, None).await.unwrap();
 
-    let mut data = String::new();
+    let mut data = vec![];
 
     while let Some(doc) = items.next().await {
-        data += &format!("{:?}\n", doc);
+        if let Ok(entry) = doc {
+            data.push(entry);
+        }
     }
 
-    data
+    data.into()
 }
+
+#[post("/new", data = "<input>")]
+async fn add(mut db: Connection<DataStuff>, input: Json<Spell>) -> Result<String, String> {
+    match db.database("local").collection::<spells::Spell>("testdb").insert_one(input.0, None).await {
+        Ok(result) => Ok(result.inserted_id.to_string()),
+        Err(e) => Err(e.to_string()),
+    }
+}
+
 pub struct Cors;
 
 #[rocket::async_trait]
@@ -49,17 +61,7 @@ impl Fairing for Cors {
 #[database("database")]
 struct DataStuff(rocket_db_pools::mongodb::Client);
 
-#[get("/spell")]
-fn produce_spell_data() -> Json<spells::Spell> {
-    spells::Spell {
-        name: "Spell".into(),
-        range: 5,
-        duration: 3600,
-        level: 4
-    }.into()
-}
-
 #[launch]
 async fn rocket() -> _ {
-    rocket::build().attach(DataStuff::init()).attach(Cors).mount("/", routes![index, read, produce_spell_data])
+    rocket::build().attach(DataStuff::init()).attach(Cors).mount("/", routes![index, read, add])
 }

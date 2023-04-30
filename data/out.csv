@@ -1,0 +1,613 @@
+name,range,duration,somatic,verbal,material,other
+Armor of Darkness,0,600,True,True,False,Other
+Blacklight,25,6,True,True,True,Other
+Bolt of Glory,25,0,True,True,False,Other
+Bolts of Bedevilment,100,6,True,True,False,Other
+Crown of Glory,5,60,True,True,True,Other
+Genesis,180,0,True,True,True,Other
+Maddening Scream,0,6,False,True,False,Other
+Rage,0,6,True,True,False,Other
+Surelife,5,60,True,True,True,Other
+Touch of Madness,0,6,True,True,False,Other
+True Creation,0,0,True,True,True,Other
+Undeath to Death,100,0,True,True,True,Other
+Animus Blast,300,0,True,True,False,Other
+Animus Blizzard,300,0,True,True,False,Other
+Contingent Resurrection,0,0,True,True,False,Other
+Create Living Vault (Ritual),0,0,True,True,False,Other
+Crown of Vermin,5,120,True,True,False,Other
+Damnation,0,0,True,True,False,Other
+Demise Unseen,300,0,True,True,False,Other
+Dire Winter,1,72000,True,True,False,Other
+Dragon Knight (Ritual),75,120,True,True,False,Other
+Dragon Strike (Ritual),75,120,True,True,False,Other
+Dreamscape,0,0,True,True,False,Other
+Eclipse,200,28800,True,True,False,Other
+Eidolon,5,28800,True,True,False,Other
+Epic Counterspell,300,0,True,True,False,Other
+Epic Mage Armor,0,86400,True,True,False,Other
+Greater Spell Resistance,0,72000,True,True,False,Other
+Greater Ruin,12,0,True,True,False,Other
+Hellball,300,0,True,True,False,Other
+Kinetic Control,0,43200,True,True,False,Other
+Let Go of Me,0,0,False,False,False,Other
+Living Lightning,300,0,False,False,False,Other
+Lord of Nightmares,75,120,True,True,False,Other
+Momento Mori,300,0,False,False,False,Other
+Mummy Dust,0,0,True,True,True,Other
+Nailed to the Sky,300,0,True,True,False,Other
+Peripety,5,43200,True,True,False,Other
+Pestilence,0,0,True,True,False,Other
+Rain of Fire,0,72000,True,True,False,Other
+Ruin,12,0,True,True,False,Other
+Safe Time,0,6,True,True,False,Other
+Spell Worm,75,72000,True,True,False,Other
+Summon Behemoth,75,120,True,True,False,Other
+Superb Dispelling,300,0,True,True,False,Other
+Time Duplicate,0,6,True,True,False,Other
+Vengeful Gaze of God,12,0,True,True,False,Other
+Verdigris,300,86400,True,True,False,Other
+Seed: Afflict,300,1200,True,True,False,Other
+Seed: Animate,300,120,True,True,False,Other
+Seed: Animate Dead,0,0,True,True,False,Other
+Seed: Armor,0,86400,True,True,False,Other
+Seed: Banish,75,0,True,True,False,Other
+Seed: Compel,75,72000,False,True,True,Other
+Seed: Conceal,0,12000,True,True,False,Other
+Seed: Conjure,0,28800,True,True,False,Other
+Seed: Delude,12,72000,True,True,False,Other
+Seed: Destroy,12,0,True,True,False,Other
+Seed: Dispel,300,0,True,True,False,Other
+Seed: Energy,300,0,True,True,False,Other
+Seed: Foresee,5,0,True,True,False,Other
+Seed: Fortify,0,72000,True,True,False,Other
+Seed: Heal,0,0,True,True,False,Other
+Seed: Life,0,0,True,True,False,Other
+Seed: Reflect,5,43200,True,True,False,Other
+Seed: Slay,300,0,True,True,False,Other
+Seed: Summon,75,120,True,True,False,Other
+Seed: Transport,0,0,True,True,False,Other
+Seed: Ward,0,86400,True,True,False,Other
+Genesis,180,0,True,True,True,Other
+Brain Spider,400,60,True,True,True,Other
+Dweomer of Transference,25,6,True,True,False,Other
+Glossolalia,60,0,False,True,False,Other
+Mental Pinnacle,5,6,True,True,True,Other
+Psychic Turmoil,25,6,True,True,True,Other
+"Psychic Turmoil, Greater",25,6,True,True,True,Other
+"Telepathic Bond, Lesser",30,600,True,True,False,Other
+Acid Arrow,400,6,True,True,True,Other
+Acid Fog,100,6,True,True,True,Other
+Acid Splash,25,0,True,True,False,Other
+Aid,0,60,True,True,False,Other
+Air Walk,0,600,True,True,False,Other
+Alarm,25,7200,True,True,False,Other
+Align Weapon,0,60,True,True,False,Other
+Alter Self,5,600,True,True,False,Other
+Analyze Dweomer,25,6,True,True,False,Other
+Animal Growth,100,60,True,True,False,Other
+Animal Messenger,25,86400,True,True,True,Other
+Animal Shapes,25,3600,True,True,False,Other
+Animate Dead,0,0,True,True,True,Other
+Animate Objects,100,6,True,True,False,Other
+Animate Plants,25,3600,False,True,False,Other
+Animate Rope,100,6,True,True,False,Other
+Antilife Shell,10,600,True,True,False,Other
+Antimagic Field,10,600,True,True,True,Other
+Antipathy,25,7200,True,True,True,Other
+Antiplant Shell,10,600,True,True,False,Other
+Arcane Eye,4294967295,60,True,True,True,Other
+Arcane Sight,5,60,True,True,False,Other
+"Arcane Sight, Greater",5,60,True,True,False,Other
+Atonement,0,0,True,True,True,Other
+Augury,5,0,True,True,True,Other
+Awaken,0,0,True,True,False,Other
+Bane,50,60,True,True,False,Other
+Banishment,25,0,True,True,False,Other
+Barkskin,0,600,True,True,False,Other
+Bear's Endurance,0,60,True,True,False,Other
+"Bear's Endurance, Mass",25,60,True,True,False,Other
+Black Tentacles,100,6,True,True,True,Other
+Blade Barrier,100,60,True,True,False,Other
+Blasphemy,40,0,False,True,False,Other
+Bless,50,60,True,True,False,Other
+Bless Water,0,0,True,True,True,Other
+Bless Weapon,0,60,True,True,False,Other
+Blight,0,0,True,True,False,Other
+Blink,5,6,True,True,False,Other
+Blur,0,60,False,True,False,Other
+Break Enchantment,25,0,True,True,False,Other
+Bull's Strength,0,60,True,True,True,Other
+"Bull's Strength, Mass",25,60,True,True,True,Other
+Burning Hands,15,0,True,True,False,Other
+Call Lightning,100,60,True,True,False,Other
+Call Lightning Storm,400,60,True,True,False,Other
+Calm Animals,25,60,True,True,False,Other
+Calm Emotions,100,6,True,True,False,Other
+Cat's Grace,0,60,True,True,True,Other
+"Cat's Grace, Mass",25,60,True,True,True,Other
+Cause Fear,25,6,True,True,False,Other
+Chain Lightning,400,0,True,True,False,Other
+Changestaff,0,3600,True,True,False,Other
+Chaos Hammer,100,0,True,True,False,Other
+Charm Animal,25,3600,True,True,False,Other
+Charm Monster,25,86400,True,True,False,Other
+"Charm Monster, Mass",25,86400,False,True,False,Other
+Charm Person,25,3600,True,True,False,Other
+Chill Metal,25,42,True,True,False,Other
+Chill Touch,0,0,True,True,False,Other
+Circle of Death,100,0,True,True,True,Other
+Clairaudience/Clairvoyance,400,60,True,True,False,Other
+Clenched Fist,100,6,True,True,False,Other
+Cloak of Chaos,20,6,True,True,False,Other
+Clone,0,0,True,True,True,Other
+Cloudkill,100,60,True,True,False,Other
+Color Spray,15,0,True,True,True,Other
+Command,25,6,False,True,False,Other
+"Command, Greater",25,6,False,True,False,Other
+Command Plants,25,86400,False,True,False,Other
+Command Undead,25,86400,True,True,True,Other
+Commune,5,6,True,True,True,Other
+Commune with Nature,5,0,True,True,False,Other
+Comprehend Languages,5,600,True,True,True,Other
+Cone of Cold,60,0,True,True,True,Other
+Confusion,100,6,True,True,True,Other
+"Confusion, Lesser",25,6,True,True,False,Other
+Consecrate,25,7200,True,True,True,Other
+Contagion,0,0,True,True,False,Other
+Contingency,5,86400,True,True,True,Other
+Control Plants,25,60,True,True,False,Other
+Control Undead,25,60,True,True,True,Other
+Control Water,400,600,True,True,True,Other
+Control Weather,2,14400,True,True,False,Other
+Control Winds,40,600,True,True,False,Other
+Corrupt Weapon,0,60,True,True,False,Other
+Create Food and Water,25,86400,True,True,False,Other
+Create Greater Undead,25,0,True,True,True,Other
+Create Undead,25,0,True,True,True,Other
+Create Water,25,0,True,True,False,Other
+Creeping Doom,25,60,True,True,False,Other
+Crushing Despair,30,60,True,True,True,Other
+Crushing Hand,100,6,True,True,True,Other
+Cure Critical Wounds,0,0,True,True,False,Other
+"Cure Critical Wounds, Mass",25,0,True,True,False,Other
+Cure Light Wounds,0,0,True,True,False,Other
+"Cure Light Wounds, Mass",25,0,True,True,False,Other
+Cure Minor Wounds,0,0,True,True,False,Other
+Cure Moderate Wounds,0,0,True,True,False,Other
+"Cure Moderate Wounds, Mass",25,0,True,True,False,Other
+Cure Serious Wounds,0,0,True,True,False,Other
+"Cure Serious Wounds, Mass",25,0,True,True,False,Other
+Curse Water,0,0,True,True,True,Other
+Dancing Lights,100,60,True,True,False,Other
+Darkness,0,600,False,True,True,Other
+Darkvision,0,3600,True,True,True,Other
+Daylight,0,600,True,True,False,Other
+Daze,25,6,True,True,True,Other
+Daze Monster,100,6,True,True,True,Other
+Death Knell,0,0,True,True,False,Other
+Death Ward,0,60,True,True,False,Other
+Deathwatch,30,600,True,True,False,Other
+Deep Slumber,25,60,True,True,True,Other
+Deeper Darkness,0,86400,False,True,True,Other
+Delay Poison,0,3600,True,True,False,Other
+Delayed Blast Fireball,400,30,True,True,True,Other
+Desecrate,25,7200,True,True,True,Other
+Destruction,25,0,True,True,False,Other
+Detect Animals or Plants,400,600,True,True,False,Other
+Detect Chaos,60,600,True,True,False,Other
+Detect Evil,60,600,True,True,False,Other
+Detect Good,60,600,True,True,False,Other
+Detect Law,60,600,True,True,False,Other
+Detect Magic,60,60,True,True,False,Other
+Detect Poison,25,0,True,True,False,Other
+Detect Scrying,40,86400,True,True,True,Other
+Detect Secret Doors,60,60,True,True,False,Other
+Detect Snares and Pits,60,600,True,True,False,Other
+Detect Thoughts,60,60,True,True,False,Other
+Detect Undead,60,60,True,True,True,Other
+Dictum,40,0,False,True,False,Other
+Dimension Door,400,0,False,True,False,Other
+Dimensional Anchor,100,60,True,True,False,Other
+Dimensional Lock,100,86400,True,True,False,Other
+Discern Lies,25,6,True,True,False,Other
+Discern Location,4294967295,0,True,True,False,Other
+Disguise Self,5,600,True,True,False,Other
+Disintegrate,100,0,True,True,True,Other
+Dismissal,25,0,True,True,False,Other
+Dispel Chaos,0,6,True,True,False,Other
+Dispel Evil,0,6,True,True,False,Other
+Dispel Good,0,6,True,True,False,Other
+Dispel Law,0,6,True,True,False,Other
+Dispel Magic,100,0,True,True,False,Other
+"Dispel Magic, Greater",100,0,True,True,False,Other
+Displacement,0,6,False,True,True,Other
+Disrupt Undead,25,0,True,True,False,Other
+Disrupting Weapon,0,6,True,True,False,Other
+Divination,5,0,True,True,True,Other
+Divine Favor,5,60,True,True,False,Other
+Divine Power,5,6,True,True,False,Other
+Dominate Animal,25,6,True,True,False,Other
+Dominate Monster,25,86400,True,True,False,Other
+Dominate Person,25,86400,True,True,False,Other
+Doom,100,60,True,True,False,Other
+Eagle's Splendor,0,60,True,True,True,Other
+"Eagle's Splendor, Mass",25,60,True,True,True,Other
+Earthquake,400,6,True,True,False,Other
+Elemental Swarm,100,600,True,True,False,Other
+Endure Elements,0,86400,True,True,False,Other
+Energy Drain,25,0,True,True,False,Other
+Enervation,25,0,True,True,False,Other
+Enlarge Person,25,60,True,True,True,Other
+"Enlarge Person, Mass",25,60,True,True,True,Other
+Entangle,400,60,True,True,False,Other
+Enthrall,100,3600,True,True,False,Other
+Entropic Shield,5,60,True,True,False,Other
+Erase,25,0,True,True,False,Other
+Ethereal Jaunt,5,6,True,True,False,Other
+Etherealness,0,60,True,True,False,Other
+Expeditious Retreat,5,60,True,True,False,Other
+Eyebite,25,6,True,True,False,Other
+Fabricate,25,0,True,True,True,Other
+Faerie Fire,400,60,True,True,False,Other
+False Life,5,3600,True,True,True,Other
+False Vision,0,3600,True,True,True,Other
+Fear,30,6,True,True,True,Other
+Feather Fall,25,6,False,True,False,Other
+Feeblemind,100,0,True,True,True,Other
+Find the Path,0,600,True,True,False,Other
+Find Traps,5,60,True,True,False,Other
+Finger of Death,25,0,True,True,False,Other
+Fire Seeds,0,600,True,True,True,Other
+Fire Shield,5,6,True,True,True,Other
+Fire Storm,100,0,True,True,False,Other
+Fireball,400,0,True,True,True,Other
+Flame Arrow,25,600,True,True,True,Other
+Flame Blade,0,60,True,True,False,Other
+Flame Strike,100,0,True,True,False,Other
+Flaming Sphere,100,6,True,True,True,Other
+Flare,25,0,False,True,False,Other
+Flesh to Stone,100,0,True,True,True,Other
+Fly,0,60,True,True,False,Other
+Floating Disk,25,3600,True,True,True,Other
+Fog Cloud,100,600,True,True,False,Other
+Forcecage,25,7200,True,True,True,Other
+Forceful Hand,100,6,True,True,False,Other
+Foresight,0,600,True,True,True,Other
+Fox's Cunning,0,60,True,True,True,Other
+"Fox's Cunning, Mass",25,60,True,True,True,Other
+Freedom,25,0,True,True,False,Other
+Freedom of Movement,0,600,True,True,True,Other
+Freezing Sphere,400,0,True,True,False,Other
+Gaseous Form,0,120,True,False,True,Other
+Gate,100,0,True,True,False,Other
+Geas/Quest,25,86400,False,True,False,Other
+"Geas, Lesser",25,86400,False,True,False,Other
+Gentle Repose,0,86400,True,True,True,Other
+Ghost Sound,25,6,True,True,True,Other
+Ghoul Touch,0,6,True,True,True,Other
+Giant Vermin,25,60,True,True,False,Other
+Glibness,5,600,True,False,False,Other
+Glitterdust,100,6,True,True,True,Other
+Globe of Invulnerability,10,6,True,True,True,Other
+"Globe of Invulnerability, Lesser",10,6,True,True,True,Other
+Goodberry,0,86400,True,True,False,Other
+Good Hope,100,60,True,True,False,Other
+Grasping Hand,100,6,True,True,False,Other
+Grease,25,6,True,True,True,Other
+Guidance,0,60,True,True,False,Other
+Gust of Wind,60,6,True,True,False,Other
+Hallow,0,0,True,True,True,Other
+Hallucinatory Terrain,400,7200,True,True,True,Other
+Halt Undead,100,6,True,True,True,Other
+Harm,0,0,True,True,False,Other
+Haste,25,6,True,True,True,Other
+Heal,0,0,True,True,False,Other
+"Heal, Mass",25,0,True,True,False,Other
+Heal Mount,0,0,True,True,False,Other
+Heat Metal,25,42,True,True,False,Other
+Helping Hand,5,3600,True,True,False,Other
+Heroes' Feast,25,3600,True,True,False,Other
+Heroism,0,600,True,True,False,Other
+"Heroism, Greater",0,60,True,True,False,Other
+Hide from Animals,0,600,True,False,False,Other
+Hide from Undead,0,600,True,True,False,Other
+Hideous Laughter,25,6,True,True,True,Other
+Hold Animal,100,6,True,True,False,Other
+Hold Monster,100,6,True,True,True,Other
+"Hold Monster, Mass",100,6,True,True,False,Other
+Hold Person,100,6,True,True,False,Other
+"Hold Person, Mass",100,6,True,True,False,Other
+Hold Portal,100,60,False,True,False,Other
+Holy Aura,20,6,True,True,False,Other
+Holy Smite,100,0,True,True,False,Other
+Holy Sword,0,6,True,True,False,Other
+Holy Word,40,0,False,True,False,Other
+Horrid Wilting,400,0,True,True,True,Other
+Hypnotic Pattern,100,12,True,True,True,Other
+Hypnotism,25,12,True,True,False,Other
+Ice Storm,400,6,True,True,True,Other
+Identify,0,0,True,True,True,Other
+Illusory Script,0,86400,True,True,True,Other
+Implosion,25,24,True,True,False,Other
+Imprisonment,0,0,True,True,False,Other
+Incendiary Cloud,100,6,True,True,False,Other
+Inflict Critical Wounds,0,0,True,True,False,Other
+"Inflict Critical Wounds, Mass",25,0,True,True,False,Other
+Inflict Light Wounds,0,0,True,True,False,Other
+"Inflict Light Wounds, Mass",25,0,True,True,False,Other
+Inflict Minor Wounds,0,0,True,True,False,Other
+Inflict Moderate Wounds,0,0,True,True,False,Other
+"Inflict Moderate Wounds, Mass",25,0,True,True,False,Other
+Inflict Serious Wounds,0,0,True,True,False,Other
+"Inflict Serious Wounds, Mass",25,0,True,True,False,Other
+Insanity,100,0,True,True,False,Other
+Insect Plague,400,60,True,True,False,Other
+Interposing Hand,100,6,True,True,False,Other
+Invisibility,0,60,True,True,True,Other
+"Invisibility, Greater",0,6,True,True,False,Other
+"Invisibility, Mass",400,60,True,True,True,Other
+Invisibility Purge,5,60,True,True,False,Other
+Invisibility Sphere,0,60,True,True,True,Other
+Iron Body,5,60,True,True,True,Other
+Ironwood,0,86400,True,True,True,Other
+Irresistible Dance,0,6,False,True,False,Other
+Jump,0,60,True,True,True,Other
+Keen Edge,25,600,True,True,False,Other
+Knock,100,0,False,True,False,Other
+Know Direction,5,0,True,True,False,Other
+Levitate,25,60,True,True,False,Other
+Light,0,600,False,True,True,Other
+Lightning Bolt,120,0,True,True,True,Other
+Liveoak,0,86400,True,True,False,Other
+Locate Creature,400,600,True,True,True,Other
+Locate Object,400,60,True,True,False,Other
+Longstrider,5,3600,True,True,True,Other
+Lullaby,100,6,True,True,False,Other
+Mage Armor,0,3600,True,True,False,Other
+Mage's Disjunction,25,0,False,True,False,Other
+Mage's Faithful Hound,25,3600,True,True,True,Other
+Mage's Lucubration,5,0,True,True,False,Other
+Mage's Magnificent Mansion,25,7200,True,True,False,Other
+Mage's Private Sanctum,25,86400,True,True,True,Other
+Mage's Sword,25,6,True,True,False,Other
+Magic Aura,0,86400,True,True,False,Other
+Magic Circle Against Chaos,0,600,True,True,True,Other
+Magic Circle Against Evil,0,600,True,True,True,Other
+Magic Circle Against Good,0,600,True,True,True,Other
+Magic Circle Against Law,0,600,True,True,True,Other
+Magic Fang,0,60,True,True,False,Other
+"Magic Fang, Greater",25,3600,True,True,False,Other
+Magic Jar,100,3600,True,True,False,Other
+Magic Missile,100,0,True,True,False,Other
+Magic Stone,0,1800,True,True,False,Other
+Magic Vestment,0,3600,True,True,False,Other
+Magic Weapon,0,60,True,True,False,Other
+"Magic Weapon, Greater",25,3600,True,True,True,Other
+Major Image,400,18,True,True,False,Other
+Make Whole,25,0,True,True,False,Other
+Meld into Stone,5,600,True,True,False,Other
+Mending,10,0,True,True,False,Other
+Message,100,600,True,True,False,Other
+Meteor Swarm,400,0,True,True,False,Other
+Mind Blank,25,86400,True,True,False,Other
+Mind Fog,100,1800,True,True,False,Other
+Minor Creation,0,3600,True,True,True,Other
+Minor Image,400,12,True,True,False,Other
+Mirage Arcana,400,3600,True,True,False,Other
+Mirror Image,5,60,True,True,False,Other
+Misdirection,25,3600,True,True,False,Other
+Mislead,25,6,True,False,False,Other
+Mnemonic Enhancer,5,0,True,True,True,Other
+Moment of Prescience,5,3600,True,True,False,Other
+Mount,25,7200,True,True,True,Other
+Move Earth,400,0,True,True,True,Other
+Neutralize Poison,0,600,True,True,True,Other
+Nightmare,4294967295,0,True,True,False,Other
+Nondetection,0,3600,True,True,True,Other
+Obscure Object,0,28800,True,True,True,Other
+Obscuring Mist,20,60,True,True,False,Other
+Open/Close,25,0,True,True,False,Other
+Order's Wrath,100,0,True,True,False,Other
+Overland Flight,5,3600,True,True,False,Other
+Owl's Wisdom,0,60,True,True,True,Other
+"Owl's Wisdom, Mass",25,60,True,True,True,Other
+Passwall,0,3600,True,True,True,Other
+Pass without Trace,0,3600,True,True,False,Other
+Persistent Image,400,60,True,True,False,Other
+Phantasmal Killer,100,0,True,True,False,Other
+Phantom Steed,0,3600,True,True,False,Other
+Planar Ally,25,0,True,True,False,Other
+"Planar Ally, Greater",25,0,True,True,False,Other
+"Planar Ally, Lesser",25,0,True,True,False,Other
+Planar Binding,25,0,True,True,False,Other
+"Planar Binding, Greater",25,0,True,True,False,Other
+"Planar Binding, Lesser",25,0,True,True,False,Other
+Plane Shift,0,0,True,True,False,Other
+Poison,0,0,True,True,False,Other
+Polar Ray,25,0,True,True,False,Other
+Polymorph,0,60,True,True,True,Other
+Power Word Kill,25,0,False,True,False,Other
+Prayer,40,6,True,True,False,Other
+Prestidigitation,10,3600,True,True,False,Other
+Prismatic Sphere,10,600,False,True,False,Other
+Prismatic Spray,60,0,True,True,False,Other
+Prismatic Wall,25,600,True,True,False,Other
+Produce Flame,0,60,True,True,False,Other
+Programmed Image,400,6,True,True,False,Other
+Project Image,100,6,True,True,True,Other
+Protection from Arrows,0,3600,True,True,False,Other
+Protection from Chaos,0,60,True,True,True,Other
+Protection from Energy,0,600,True,True,False,Other
+Protection from Evil,0,60,True,True,True,Other
+Protection from Good,0,60,True,True,True,Other
+Protection from Law,0,60,True,True,True,Other
+Protection from Spells,0,600,True,True,True,Other
+Prying Eyes,5280,3600,True,True,True,Other
+"Prying Eyes, Greater",5280,3600,True,True,True,Other
+Purify Food and Drink,10,0,True,True,False,Other
+Pyrotechnics,400,6,True,True,True,Other
+Quench,100,0,True,True,False,Other
+Rage,100,6,True,True,False,Other
+Rainbow Pattern,100,6,True,True,True,Other
+Raise Dead,0,0,True,True,True,Other
+Ray of Enfeeblement,25,60,True,True,False,Other
+Ray of Exhaustion,25,60,True,True,True,Other
+Ray of Frost,25,0,True,True,False,Other
+Read Magic,5,600,True,True,False,Other
+Reduce Animal,0,3600,True,True,False,Other
+Reduce Person,25,60,True,True,True,Other
+"Reduce Person, Mass",25,60,True,True,True,Other
+Regenerate,0,0,True,True,False,Other
+Reincarnate,0,0,True,True,True,Other
+Remove Blindness/Deafness,0,0,True,True,False,Other
+Remove Curse,0,0,True,True,False,Other
+Remove Disease,0,0,True,True,False,Other
+Remove Fear,25,600,True,True,False,Other
+Remove Paralysis,25,0,True,True,False,Other
+Repel Metal or Stone,60,6,True,True,False,Other
+Repel Vermin,10,600,True,True,False,Other
+Repel Wood,60,60,True,True,False,Other
+Repulsion,10,6,True,True,False,Other
+Resilient Sphere,25,60,True,True,True,Other
+Resistance,0,60,True,True,True,Other
+Resist Energy,0,600,True,True,False,Other
+Restoration,0,0,True,True,True,Other
+"Restoration, Greater",0,0,True,True,False,Other
+"Restoration, Lesser",0,0,True,True,False,Other
+Resurrection,0,0,True,True,True,Other
+Reverse Gravity,100,6,True,True,True,Other
+Righteous Might,5,6,True,True,False,Other
+Rope Trick,0,3600,True,True,True,Other
+Sanctuary,0,6,True,True,False,Other
+Scare,100,6,True,True,True,Other
+Scintillating Pattern,25,12,True,True,True,Other
+Scorching Ray,25,0,True,True,False,Other
+Screen,25,86400,True,True,False,Other
+Sculpt Sound,25,3600,True,True,False,Other
+Searing Light,100,0,True,True,False,Other
+Secure Shelter,25,7200,True,True,True,Other
+See Invisibility,5,600,True,True,True,Other
+Seeming,25,43200,True,True,False,Other
+Sepia Snake Sigil,0,86400,True,True,True,Other
+Sequester,0,86400,True,True,True,Other
+Shadow Walk,0,3600,True,True,False,Other
+Shapechange,5,600,True,True,False,Other
+Shatter,25,0,True,True,True,Other
+Shield,5,60,True,True,False,Other
+Shield of Faith,0,60,True,True,True,Other
+Shield of Law,20,6,True,True,False,Other
+Shield Other,25,3600,True,True,False,Other
+Shillelagh,0,60,True,True,False,Other
+Shocking Grasp,0,0,True,True,False,Other
+Shout,30,0,False,True,False,Other
+"Shout, Greater",60,0,True,True,False,Other
+Shrink Item,0,86400,True,True,False,Other
+Silence,400,60,True,True,False,Other
+Simulacrum,0,0,True,True,True,Other
+Slay Living,0,0,True,True,False,Other
+Sleep,100,60,True,True,True,Other
+Sleet Storm,400,6,True,True,True,Other
+Slow,25,6,True,True,True,Other
+Soften Earth and Stone,25,0,True,True,False,Other
+Solid Fog,100,60,True,True,True,Other
+Song of Discord,100,6,True,True,False,Other
+Sound Burst,25,0,True,True,False,Other
+Speak with Animals,5,60,True,True,False,Other
+Speak with Dead,10,60,True,True,False,Other
+Speak with Plants,5,60,True,True,False,Other
+Spectral Hand,100,60,True,True,False,Other
+Spell Immunity,0,600,True,True,False,Other
+"Spell Immunity, Greater",0,600,True,True,False,Other
+Spell Resistance,0,60,True,True,False,Other
+Spell Turning,5,600,True,True,True,Other
+Spider Climb,0,600,True,True,True,Other
+Spike Growth,100,3600,True,True,False,Other
+Spike Stones,100,3600,True,True,False,Other
+Spiritual Weapon,100,6,True,True,False,Other
+Statue,0,3600,True,True,True,Other
+Status,0,3600,True,True,False,Other
+Stinking Cloud,100,6,True,True,True,Other
+Stone Shape,0,0,True,True,True,Other
+Stoneskin,0,600,True,True,True,Other
+Stone Tell,5,60,True,True,False,Other
+Stone to Flesh,100,0,True,True,True,Other
+Storm of Vengeance,400,60,True,True,False,Other
+Suggestion,25,3600,False,True,True,Other
+"Suggestion, Mass",100,3600,False,True,True,Other
+Summon Instrument,0,60,True,True,False,Other
+Summon Monster I,25,6,True,True,False,Other
+Summon Monster II,25,6,True,True,False,Other
+Summon Monster III,25,6,True,True,False,Other
+Summon Monster IV,25,6,True,True,False,Other
+Summon Monster V,25,6,True,True,False,Other
+Summon Monster VI,25,6,True,True,False,Other
+Summon Monster VII,25,6,True,True,False,Other
+Summon Monster VIII,25,6,True,True,False,Other
+Summon Monster IX,25,6,True,True,False,Other
+Summon Nature's Ally I,25,6,True,True,False,Other
+Summon Nature's Ally II,25,6,True,True,False,Other
+Summon Nature's Ally III,25,6,True,True,False,Other
+Summon Nature's Ally IV,25,6,True,True,False,Other
+Summon Nature's Ally V,25,6,True,True,False,Other
+Summon Nature's Ally VI,25,6,True,True,False,Other
+Summon Nature's Ally VII,25,6,True,True,False,Other
+Summon Nature's Ally VIII,25,6,True,True,False,Other
+Summon Nature's Ally IX,25,6,True,True,False,Other
+Summon Swarm,25,12,True,True,True,Other
+Sunbeam,60,6,True,True,False,Other
+Sunburst,400,0,True,True,True,Other
+Sympathetic Vibration,0,6,True,True,False,Other
+Sympathy,25,7200,True,True,True,Other
+Telekinesis,400,0,True,True,False,Other
+Telekinetic Sphere,25,60,True,True,True,Other
+Telepathic Bond,25,600,True,True,True,Other
+Teleport,0,0,False,True,False,Other
+Teleport Object,0,0,False,True,False,Other
+"Teleport, Greater",0,0,False,True,False,Other
+Teleportation Circle,0,600,False,True,True,Other
+Time Stop,5,6,False,True,False,Other
+Tiny Hut,20,7200,True,True,True,Other
+Tongues,0,600,False,True,True,Other
+Touch of Fatigue,0,6,True,True,True,Other
+Touch of Idiocy,0,600,True,True,False,Other
+Transformation,5,6,True,True,True,Other
+Transmute Metal to Wood,400,0,True,True,False,Other
+Transport via Plants,4294967295,6,True,True,False,Other
+Tree Shape,5,3600,True,True,False,Other
+Tree Stride,5,3600,True,True,False,Other
+True Resurrection,0,0,True,True,True,Other
+True Seeing,0,60,True,True,True,Other
+Undeath to Death,100,0,True,True,True,Other
+Undetectable Alignment,25,86400,True,True,False,Other
+Unhallow,0,0,True,True,True,Other
+Unholy Aura,20,6,True,True,False,Other
+Unholy Blight,100,0,True,True,False,Other
+Unseen Servant,25,3600,True,True,True,Other
+Vampiric Touch,0,0,True,True,False,Other
+Veil,400,3600,True,True,False,Other
+Ventriloquism,25,60,False,True,False,Other
+Virtue,0,60,True,True,False,Other
+Wail of the Banshee,25,0,False,True,False,Other
+Wall of Fire,100,6,True,True,True,Other
+Wall of Force,25,6,True,True,True,Other
+Wall of Ice,100,60,True,True,True,Other
+Wall of Iron,100,0,True,True,True,Other
+Wall of Stone,100,0,True,True,True,Other
+Wall of Thorns,100,600,True,True,False,Other
+Warp Wood,25,0,True,True,False,Other
+Water Breathing,0,7200,True,True,True,Other
+Water Walk,0,600,True,True,False,Other
+Waves of Exhaustion,60,0,True,True,False,Other
+Waves of Fatigue,30,0,True,True,False,Other
+Web,100,600,True,True,True,Other
+Weird,100,0,True,True,False,Other
+Whirlwind,400,6,True,True,False,Other
+Whispering Wind,1,3600,True,True,False,Other
+Wind Walk,0,3600,True,True,False,Other
+Wind Wall,100,6,True,True,True,Other
+Wood Shape,0,0,True,True,False,Other
+Word of Chaos,40,0,False,True,False,Other
+Word of Recall,4294967295,0,False,True,False,Other
+Zone of Silence,5,3600,True,True,False,Other
+Zone of Truth,25,60,True,True,False,Other
