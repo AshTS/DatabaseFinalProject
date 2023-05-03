@@ -1,5 +1,7 @@
 import csv
 
+classes = {"Bard": "Bard", "Cleric": "Cleric", "Druid": "Druid", "Paladin": "Paladin", "Ranger": "Ranger", "Sorcerer/Wizard": "Wizard", "Sorcerer": "Wizard", "Wizard": "Wizard"}
+
 def first_number(s):
     for i in range(len(s)):
         if s[i].isdigit():
@@ -9,13 +11,22 @@ def first_number(s):
             return int(s[i:i + length])
     return None
 
-output = open("out.csv", "w")
 reader = csv.reader(open("original.csv", "r").readlines())
+output = open("out.csv", "w")
 output = csv.writer(output)
 
+class_output = open("class-pairs.csv", "w")
+class_output = csv.writer(class_output)
+
+
+
 header = next(reader)
-out_headers = ["name", "range", "duration", "somatic", "verbal", "material", "other"]
+out_headers = ["spell_id", "name", "range", "duration", "somatic", "verbal", "material", "area", "other"]
 output.writerow(out_headers)
+
+class_output.writerow(["spell_id", "class", "level", "other"])
+
+SPELL_ID = 0
 
 for row in reader:
     d = {key: value for (key, value) in zip(header, row)}
@@ -53,7 +64,31 @@ for row in reader:
     somatic = "s" in d["components"].lower()
     material = "m" in d["components"].lower()
 
-    row = [d["name"], range_distance, duration, somatic, verbal, material, "Other"]
+    area = not "None" in d["area"]
+
+    level_pairs = []
+
+    if d["level"] != "None":
+        entries = d["level"].split(", ")
+        for entry in entries:
+            if len(entry.split(" ")) == 2:
+                name, number = entry.split(" ")
+                if name in classes:
+                    level_pairs.append((classes[name], int(number)))
+                    pass
+                else:
+                    pass
+            else:
+                pass
+
+        print(level_pairs)
+
+        for name, level in level_pairs:
+            class_output.writerow([SPELL_ID, name, level, "other"])
+
+    row = [SPELL_ID, d["name"], range_distance, duration, somatic, verbal, material, area, "Other"]
     output.writerow(row)
+
+    SPELL_ID += 1
 
     

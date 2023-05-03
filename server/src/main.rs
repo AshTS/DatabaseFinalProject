@@ -1,19 +1,31 @@
 #[macro_use] 
 extern crate rocket;
 
-use mongodb::bson::oid::ObjectId;
+use std::collections::HashMap;
+
 use rocket_db_pools::{Database, Connection};
-use rocket::{serde::{json::Json}, http::{Header}, Response, fairing::{Fairing, Info, Kind}, Request, futures::StreamExt, Data};
-use spells::Spell;
+use rocket::{serde::{json::Json}, http::{Header}, Response, fairing::{Fairing, Info, Kind}, Request, futures::StreamExt};
+use spells::{Spell, ClassLevelPair, SpellPair};
 
 #[get("/")]
 fn index() -> &'static str {
     "Hello, world!"
 }
 
+async fn load_class_level_pairs(db: &Connection<DataStuff>) -> Vec<ClassLevelPair> {
+    let mut items = db.database("local").collection::<spells::ClassLevelPair>("class_table").find(None, None).await.unwrap();
 
-#[get("/all")]
-async fn read(mut db: Connection<DataStuff>) -> Json<Vec<Spell>> {
+    let mut data = vec![];
+    while let Some(doc) = items.next().await {
+        if let Ok(entry) = doc {
+            data.push(entry);
+        }
+    }
+
+    data
+}
+
+async fn load_spells(db: &Connection<DataStuff>) -> Vec<Spell> {
     let mut items = db.database("local").collection::<spells::Spell>("testdb").find(None, None).await.unwrap();
 
     let mut data = vec![];
@@ -24,11 +36,26 @@ async fn read(mut db: Connection<DataStuff>) -> Json<Vec<Spell>> {
         }
     }
 
-    data.into()
+    data
+}
+
+
+#[get("/all")]
+async fn read(db: Connection<DataStuff>) -> Json<Vec<SpellPair>> {
+    let mut spells: HashMap<usize, SpellPair> = load_spells(&db).await.into_iter().map(|spell| (spell.spell_id, SpellPair{ spell, pairs: vec![] })).collect();
+    let class_level_pairs = load_class_level_pairs(&db).await;
+
+    for class_level_pair in class_level_pairs {
+        if let Some(pair) = spells.get_mut(&class_level_pair.spell_id) {
+            pair.pairs.push(class_level_pair);
+        }
+    }
+
+    spells.into_iter().map(|(_, v)| v).collect::<Vec<SpellPair>>().into()
 }
 
 #[post("/new", data = "<input>")]
-async fn add(mut db: Connection<DataStuff>, input: Json<Spell>) -> Result<String, String> {
+async fn add(db: Connection<DataStuff>, input: Json<Spell>) -> Result<String, String> {
     match db.database("local").collection::<spells::Spell>("testdb").insert_one(input.0, None).await {
         Ok(result) => Ok(result.inserted_id.to_string()),
         Err(e) => Err(e.to_string()),

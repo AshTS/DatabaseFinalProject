@@ -41,22 +41,28 @@ pub fn NewSpellComponent() -> Html {
 
     let on_change_somatic = {
         let s: UseStateHandle<Spell> = state.clone();
-        move | text: bool | {
-            info!("Somatic: {}", text);
+        move | value: bool | {
+            let mut spell = (*s).clone();
+            spell.somatic = value;
+            s.set(spell);
         }
     };
 
     let on_change_verbal = {
         let s: UseStateHandle<Spell> = state.clone();
-        move | text: bool | {
-            info!("Verbal: {}", text);
+        move | value: bool | {
+            let mut spell = (*s).clone();
+            spell.verbal = value;
+            s.set(spell);
         }
     };
 
     let on_change_material = {
         let s: UseStateHandle<Spell> = state.clone();
-        move | text: bool | {
-            info!("Material: {}", text);
+        move | value: bool | {
+            let mut spell = (*s).clone();
+            spell.material = value;
+            s.set(spell);
         }
     };
 
@@ -74,7 +80,7 @@ pub fn NewSpellComponent() -> Html {
             });
 
     html! {
-        <div class="block box">
+        <div class="block">
             <InputElement<String> name="Name" on_change={on_change_name} />
             <div class="columns">
                 <div class="column is-three-quarters">
