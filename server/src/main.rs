@@ -26,7 +26,7 @@ async fn load_class_level_pairs(db: &Connection<DataStuff>) -> Vec<ClassLevelPai
 }
 
 async fn load_spells(db: &Connection<DataStuff>) -> Vec<Spell> {
-    let mut items = db.database("local").collection::<spells::Spell>("testdb").find(None, None).await.unwrap();
+    let mut items = db.database("local").collection::<spells::Spell>("spell_table").find(None, None).await.unwrap();
 
     let mut data = vec![];
 
@@ -55,11 +55,27 @@ async fn read(db: Connection<DataStuff>) -> Json<Vec<SpellPair>> {
 }
 
 #[post("/new", data = "<input>")]
-async fn add(db: Connection<DataStuff>, input: Json<Spell>) -> Result<String, String> {
-    match db.database("local").collection::<spells::Spell>("testdb").insert_one(input.0, None).await {
+async fn add(db: Connection<DataStuff>, mut input: Json<SpellPair>) -> Result<String, String> {
+    let next_spell_id = load_spells(&db).await.into_iter().map(|s| s.spell_id).max().unwrap_or(0) + 1;
+
+    input.0.spell.spell_id = next_spell_id;
+
+    let SpellPair { spell, pairs } = input.0;
+
+    let id = match db.database("local").collection::<spells::Spell>("spell_table").insert_one(spell, None).await {
         Ok(result) => Ok(result.inserted_id.to_string()),
         Err(e) => Err(e.to_string()),
+    }?;
+
+    for mut pair in pairs {
+        pair.spell_id = next_spell_id;
+        match db.database("local").collection::<spells::ClassLevelPair>("class_table").insert_one(pair, None).await {
+            Ok(_) => Ok(()),
+            Err(e) => Err(e.to_string()),
+        }?;
     }
+
+    Ok(id)
 }
 
 pub struct Cors;

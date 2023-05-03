@@ -1,5 +1,6 @@
 use std::marker::PhantomData;
 
+use spells::{ListAll, Class};
 use web_sys::HtmlInputElement;
 use yew::prelude::*;
 
@@ -133,6 +134,27 @@ implement_for_type!(raw bool, (|onchange, ctx: &Context<Self> |
         </div>
     }));
 
+implement_for_type!(raw Class, (|onchange, ctx: &Context<Self> | 
+    html! {
+        <>
+            if let Some(name) = &ctx.props().name {
+                <p>{ name }</p>
+            }
+            <div class="select">
+                <select {onchange}>
+                    {{
+                        let all = Class::all();
+                        let mut v: Vec<_> = all.keys().into_iter().collect();
+                        v.sort();
+                        
+                        v.into_iter().map(|s| html!(<option>{s}</option>)).collect::<Html>()
+                    }}
+                </select>
+            </div>
+        </>
+
+    }));
+    
 impl Component for TagToggleInput {
     type Message = Msg<()>;
     type Properties = TagToggleInputProperties;

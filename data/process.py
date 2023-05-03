@@ -12,10 +12,10 @@ def first_number(s):
     return None
 
 reader = csv.reader(open("original.csv", "r").readlines())
-output = open("out.csv", "w")
+output = open("spell_table.csv", "w")
 output = csv.writer(output)
 
-class_output = open("class-pairs.csv", "w")
+class_output = open("class_table.csv", "w")
 class_output = csv.writer(class_output)
 
 

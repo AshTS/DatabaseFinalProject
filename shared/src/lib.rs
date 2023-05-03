@@ -1,3 +1,5 @@
+use std::{collections::HashMap, str::FromStr};
+
 use serde::{Serialize, Deserialize};
 
 /// Define a type that models our data.
@@ -42,7 +44,7 @@ pub struct ClassLevelPair {
 
 impl std::default::Default for Class {
     fn default() -> Self {
-        Class::Bard
+        Class::Wizard
     }
 }
 
@@ -60,6 +62,10 @@ impl std::fmt::Display for Class {
     }
 }
 
+pub trait ListAll<T> {
+    fn all() -> HashMap<String, T>;
+}
+
 impl Class {
     pub fn color(&self) -> &'static str {
         match self {
@@ -71,5 +77,29 @@ impl Class {
             Class::Ranger => "danger",
             Class::Wizard => "link",
         }
+    }
+
+    
+}
+
+impl ListAll<Class> for Class {
+    fn all() -> HashMap<String, Class> {
+        vec![
+            Class::Bard,
+            Class::BlackGuard,
+            Class::Cleric,
+            Class::Druid,
+            Class::Paladin,
+            Class::Ranger,
+            Class::Wizard
+        ].into_iter().map(|c| (c.to_string(), c)).collect()
+    }
+}
+
+impl FromStr for Class {
+    type Err = ();
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        Class::all().get(s).cloned().ok_or(())
     }
 }
