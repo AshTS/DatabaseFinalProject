@@ -2,7 +2,11 @@
 This is a group final project for 4453 Systems: Databases
 by Isabelle Hjelden, Jadyn Sondrol, and Ash Plasek
 
-(README is undercontruction)
+## Final Summary
+For our project, we wanted to create a website that contained a list of the spells from dnd 3.5 that was filterable. There are many aspect to the spells so we decided to limit our data to requirements of the spell. People can filter search spells by name, range, duration, class, level, and components (somatic, material, and verbal). A user can also add spells to the database through the website. 
+
+We managed to complete every goal we set for this website. We would love to continue this project by adding the rest of the information, including the descriptions of the spells and the damage caused by them. By adding the rest of the information, this website would become extremely helpful to a dnd player. Despite this, we are proud of the work we’ve done for the website.
+
 
 ## Requirements
 
